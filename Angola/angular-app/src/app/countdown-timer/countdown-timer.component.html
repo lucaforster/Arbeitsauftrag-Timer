@@ -1,0 +1,11 @@
+<div class="timer">
+    <h1>Countdown Timer</h1>
+    <div class="display">
+      <span>{{ minutes < 10 ? '0' + minutes : minutes }}</span>:<span>{{ seconds < 10 ? '0' + seconds : seconds }}</span>
+    </div>
+    <div class="controls">
+      <button (click)="startTimer()" [disabled]="isRunning">Start</button>
+      <button (click)="stopTimer()">Stop</button>
+      <button (click)="resetTimer()">Reset</button>
+    </div>
+  </div>
